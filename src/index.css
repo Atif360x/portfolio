@@ -1,0 +1,66 @@
+body{
+    margin: 0%;
+    background-color: black;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    height: 70px;
+}
+.nav_icn{
+    display: flex;
+    
+}
+
+.icon{
+    color: #fff;
+    height: 50px;
+    width: 50px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 25px;
+    box-shadow: 0 9px 32px 0 rgba(0, 0, 0, 0.16);
+}
+
+.navls{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 25px;
+    box-shadow: 0 9px 32px 0 rgba(0, 0, 0, 0.16);
+    height: 50px;
+    margin: 10px;
+    border-radius: 9999px;
+}
+
+.navicon{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin: 10px;
+    border-radius: 9999px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 25px;
+    box-shadow: 0 9px 32px 0 rgba(0, 0, 0, 0.16);
+
+}
+
+nav p {
+    margin: 5px;
+    margin-left: 8px;
+    margin-right: 8px;
+    font-size: 15px;
+    cursor: pointer;
+}
