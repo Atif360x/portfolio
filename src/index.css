@@ -1,66 +1,170 @@
-body{
-    margin: 0%;
-    background-color: black;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+body {
+  margin: 0;
+  background-color: #0b0b0b; 
+  background-image: radial-gradient(rgba(255, 255, 255, 0.15) 1px, transparent 1px);
+  background-size: 48px 48px;
 }
 
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center ;
-    height: 70px;
-}
-.nav_icn{
-    display: flex;
-    
+/* 1. Base Navbar Layout */
+.navbar {
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 20px; 
+  box-sizing: border-box;
+  z-index: 1000;
 }
 
-.icon{
-    color: #fff;
-    height: 50px;
-    width: 50px;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.15);
+.nav_icn {
+  display: flex;
+}
+
+/* 2. Glassmorphism Containers (Keeps the blur intact) */
+.icon {
+  height: 50px;
+  width: 50px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 25px;
+  box-shadow: 0 9px 32px 0 rgba(0, 0, 0, 0.16);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 9px 32px 0 rgba(0, 0, 0, 0.16);
+  height: 50px;
+  margin: 10px;
+  border-radius: 9999px;
+  padding: 0 15px;
+}
+
+.navicon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  margin: 10px;
+  border-radius: 9999px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 9px 32px 0 rgba(0, 0, 0, 0.16);
+}
+
+/* 3. Text Inversion (Targets your exact JSX .text class) */
+.navbar .text {
+  color: #ffffff;
+  mix-blend-mode: difference;
+  display: inline-block; 
+  margin: 5px 8px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/* 4. Layout Sections */
+.page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.intro {
+  color: #fff;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  padding-left: 50px;
+}
+
+.intro h1 {
+  font-weight: 800;
+  font-size: 60px;
+  margin: 0;
+}
+
+.intro h3 {
+  margin: 0 0 0 2px;
+  opacity: 80%;
+}
+
+.bord {
+  margin-right: 80px;
+  height: 60vh;
+  width: 45vh;
+  background: url(/src/assets/Stripboard.jpg);
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #444;
+  border-radius: 25px;
+}
+
+.link {
+  margin: 0;
+  padding-left: 8px;
+}
+
+/* 5. White Section Background */
+.about_bg {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  mix-blend-mode: difference;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+}
+
+.about_img{
+    width: 90vw;
+    max-width: 300px;
+    height: 70vh;
+    background-color: #444;
+    border: 1px solid #222;
     border-radius: 25px;
-    box-shadow: 0 9px 32px 0 rgba(0, 0, 0, 0.16);
-}
-
-.navls{
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: 25px;
-    box-shadow: 0 9px 32px 0 rgba(0, 0, 0, 0.16);
-    height: 50px;
     margin: 10px;
-    border-radius: 9999px;
 }
 
-.navicon{
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    margin: 10px;
-    border-radius: 9999px;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: 25px;
-    box-shadow: 0 9px 32px 0 rgba(0, 0, 0, 0.16);
-
+.about_para{
+    width: 50vw;
 }
 
-nav p {
-    margin: 5px;
-    margin-left: 8px;
-    margin-right: 8px;
-    font-size: 15px;
-    cursor: pointer;
+.about_para h1 {
+    font-family: "Nunito", sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    margin: 0;
+    gap: 10px;
+}
+
+.about_btn{
+    width: auto;
+    height: 30px;
+    border: 1px solid #0b0b0b;
+    border-radius: 9999px;
+    padding: 0 15px;
+    margin: 8px;
 }

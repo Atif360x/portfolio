@@ -5,11 +5,17 @@ import heroImg from './assets/hero.png'
 import './App.css'
 import './index.css'
 import Nav from './portfolio/Nav.jsx'
+import Hero from './portfolio/Hero.jsx'
+import About from './portfolio/About.jsx'
 
 function App() {
 
   return (
+    <>
     <Nav />
+    <Hero />
+    <About />
+    </>
   )
 }
 
