@@ -42,7 +42,6 @@ export default function TechStack() {
           end: "top -700%",
           pin: true,
           scrub: 4,
-          markers: true
         },
       });
     }, containerRef);
@@ -56,9 +55,9 @@ export default function TechStack() {
         {techStack.map((tech) => (
           <div
             key={tech.name}
-            className="tech-icon shrink-0 grid gap-10 lg:gap-15 cursor-pointer"
+            className="tech-icon text-white shrink-0 px-10 py-10 border rounded-[999] hover:border-[#00FF00]/20 hover:shadow-lg hover:shadow-[#3A2FE9]/40 gap-5 lg:gap-10 cursor-pointer"
           >
-            <img src={tech.src} alt={tech.name} className="w-35 h-35 lg:w-52 lg:h-52" />
+            <img src={tech.src} alt={tech.name} className="w-35 h-35 lg:w-52 lg:h-52 " />
           </div>
         ))}
       </div>
