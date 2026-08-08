@@ -2,6 +2,11 @@ import { Inter, Cinzel, Playfair_Display, Anton_SC } from 'next/font/google';
 
 import Link from "next/link";
 
+const playfair_display = Playfair_Display({ 
+  subsets: ['latin'],
+  weight: ['400']
+});
+
 export default function Navbar() {
   return (
     <div className="fixed top-0 border-b-1 border-[#00FF00]/25 left-0 w-full h-[70px] z-50">

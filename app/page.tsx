@@ -1,11 +1,12 @@
 import Image from "next/image";
-import Link from 'next/link'
-import { Inter, Cinzel, Playfair_Display } from 'next/font/google';
+import Link from 'next/link';
+import { Inter, Cinzel, Playfair_Display_SC } from 'next/font/google';
 import { FaLocationDot, FaCode } from "react-icons/fa6";
 import TechStack from '@/components/Techstack';
-import Work from '@/app/work/page'
-import Connect from '@/components/connect'
+import Work from '@/app/work/page';
+import Connect from '@/components/connect';
 import Footer from "@/components/footer";
+import ContactForm from "@/components/contactform"
 
 
 export default function Home() {
@@ -14,10 +15,10 @@ export default function Home() {
     <main>
       <div className=" p-5 h-[100vh] w-[100vw] bg-linear-160 from-[#000]/20 to-[75%] to-[#000]">
 
-        <h1 className=" font-[playfair_Display] leading-none mix-blend-difference pl-5 pt-[80] text-white text-[60px] font-bold md:w-[60vw] md:text-[80px] lg:w-[60vw] lg:text-[100px]">
+        <h1 className=" font-[Serif] leading-none mix-blend-difference pl-5 pt-[80] text-white text-[60px] font-bold md:w-[60vw] md:text-[80px] lg:w-[60vw] lg:text-[100px]">
           FULL STACK DEVELOPER
         </h1>
-        <h2 className="font-[playfair_Display] flex justify-self-end text-right leading-none mix-blend-difference pt-[20vh] text-white text-[50px] font-bold md:w-[60vw] md:text-[70px] lg:w-[60vw] lg:text-[80px]">
+        <h2 className="font-[Serif] flex justify-self-end text-right leading-none mix-blend-difference pt-[20vh] text-white text-[50px] font-bold md:w-[60vw] md:text-[70px] lg:w-[60vw] lg:text-[80px]">
           making clean and high end web experiences
         </h2>
 
@@ -68,9 +69,13 @@ export default function Home() {
 
           <Work />
 
-          <div className="w-[100vw] h-[100vh] flex justify-center items-center">
-            <Connect  />
-          </div>
+          <div className="w-full mt-10 mb-20 h-auto min-h-screen gap-5 flex flex-col md:flex-row lg:justify-between items-start">
+  <div className="w-full h-[35rem] md:w-[40vw] lg:w-[30vw] p-6 flex items-center justify-center rounded-xl border border-white/10 transition-all duration-300 bg-white/5 hover:shadow-xl hover:shadow-[#3A2FE9]/20 hover:bg-linear-180 hover:from-[#0A0A0A]/5 hover:from-[40%] hover:to-[#3A2FE9]/8 hover:border-[#00FF00]/20 backdrop-blur-sm">
+    hey
+  </div>
+
+  <ContactForm />
+</div>
 
           <Footer />
       </div>
