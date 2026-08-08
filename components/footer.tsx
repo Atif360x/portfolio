@@ -14,7 +14,7 @@ const playfair_display = Jaro({
 export default function Footer () {
 
     return (
-        <footer className="h-70 flex flex-col w-[100vw] bg-black overflow-hidden">
+        <footer className="h-70 flex flex-col w-[100vw] gap- bg-black overflow-hidden">
             <div className="bg-[#0A0A0A] flex flex-col justify-between md:flex-row lg:flex-row font-[playfair_display] p-8 text-white h-[50%]">
                 <p className='text-xl'>© 2026 • Built with precision & caffeine.</p>
                 <div className='flex gap-5'>
@@ -42,9 +42,9 @@ export default function Footer () {
 
 
             <div>
-                <h2 aria-hidden="true" className="mt-10 select-none whitespace-nowrap text-[15vw] font-black leading-[0.75] tracking-tighter text-white/80 sm:text-[16vw]">
+                <div aria-hidden="true" className="mt-10 flex flex-row gap-2 select-none whitespace-nowrap text-[25vw] font-black leading-[0.55] tracking-tighter text-white/80 sm:text-[16vw]">
                     ATIF 
-                </h2>
+                </div>
             </div>
             
         </footer>
