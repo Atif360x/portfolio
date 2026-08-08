@@ -18,6 +18,7 @@ export default function TechStack() {
     { name: "Next.js", src: "/nextjs_icon_dark.svg" },
     { name: "Node.js", src: "/nodejs.svg" },
     { name: "Express.js", src: "/expressjs_dark.svg" },
+    { name: "postman", src: "/postman.svg"},
     { name: "MongoDB", src: "/mongodb-icon-dark.svg" },
     { name: "MySQL", src: "/mysql-icon-dark.svg" },
     { name: "PostgreSQL", src: "/postgresql.svg" },
@@ -34,8 +35,9 @@ export default function TechStack() {
   useEffect(() => {
     const ctx = gsap.context(() => {
       gsap.to(".tech-icon", {
-        x: "-2000%",
-        duration: "7",
+        x: "-1900%",
+        duration: "1",
+        delay: 0.77,
         scrollTrigger: {
           trigger: containerRef.current,
           start: "top 0%",

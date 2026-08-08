@@ -5,7 +5,7 @@ import { FaLocationDot, FaCode } from "react-icons/fa6";
 import TechStack from '@/components/Techstack';
 import Work from '@/app/work/page'
 import Connect from '@/components/connect'
-
+import Footer from "@/components/footer";
 
 export default function Home() {
 
@@ -24,7 +24,7 @@ export default function Home() {
           <Link href="/work">
             <div className="text-white py-5 px-10 w-[40vw] h-[60] border-1 rounded-[999px] flex items-center justify-center text-center hover:border-[#00FF00] hover:text-[#00FF00] active:bg-[#00FF00] active:border-[#000] active:text-[#000] cursor-pointer">view work</div>
           </Link>
-          <Link href="/connect">
+          <Link href="#connect">
             <div className="text-white py-5 px-10 w-[40vw] h-[60] border-1 rounded-[999px] flex items-center justify-center text-center hover:border-[#00FF00] hover:text-[#00FF00] active:bg-[#00FF00] active:border-[#000] active:text-[#000] cursor-pointer">connect</div>
           </Link>
         </div>
@@ -68,10 +68,11 @@ export default function Home() {
           <Work />
 
           <div className="w-[100vw] h-[100vh] flex justify-center items-center">
-            <Connect />
+            <Connect  />
           </div>
-      </div>
 
+          <Footer />
+      </div>
     </main>
   );
 }
