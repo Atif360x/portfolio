@@ -32,3 +32,9 @@ html::-webkit-scrollbar,
 body::-webkit-scrollbar {
   display: none;
 }
+
+@media (hover: hover) {
+  * {
+    cursor: none;
+  }
+}

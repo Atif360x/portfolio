@@ -3,10 +3,9 @@ import Link from 'next/link';
 import { Inter, Cinzel, Playfair_Display_SC } from 'next/font/google';
 import { FaLocationDot, FaCode } from "react-icons/fa6";
 import TechStack from '@/components/Techstack';
-import Work from '@/app/work/page';
-import Connect from '@/components/connect';
+import Work from '@/components/work';
 import Footer from "@/components/footer";
-import ContactForm from "@/components/contactform"
+import Connect from '@/components/connectsection'
 
 
 export default function Home() {
@@ -23,7 +22,7 @@ export default function Home() {
         </h2>
 
         <div className="flex w-fill gap-5 justify-center pt-20">
-          <Link href="/work">
+          <Link href="#work">
             <div className="text-white py-5 px-10 w-[40vw] h-[60] border-1 rounded-[999px] flex items-center justify-center text-center hover:border-[#00FF00] hover:text-[#00FF00] active:bg-[#00FF00] active:border-[#000] active:text-[#000] cursor-pointer">view work</div>
           </Link>
           <Link href="#connect">
@@ -67,15 +66,13 @@ export default function Home() {
 
           <TechStack />
 
-          <Work />
+          <div id="work">
+            <Work />
+          </div>
 
-          <div className="w-full mt-10 mb-20 h-auto min-h-screen gap-5 flex flex-col md:flex-row lg:justify-between items-start">
-  <div className="w-full h-[35rem] md:w-[40vw] lg:w-[30vw] p-6 flex items-center justify-center rounded-xl border border-white/10 transition-all duration-300 bg-white/5 hover:shadow-xl hover:shadow-[#3A2FE9]/20 hover:bg-linear-180 hover:from-[#0A0A0A]/5 hover:from-[40%] hover:to-[#3A2FE9]/8 hover:border-[#00FF00]/20 backdrop-blur-sm">
-    hey
-  </div>
-
-  <ContactForm />
-</div>
+          <div id="connect">
+              <Connect />
+          </div>
 
           <Footer />
       </div>
