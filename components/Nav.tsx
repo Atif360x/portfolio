@@ -13,16 +13,18 @@ export default function Navbar() {
       <div className="absolute inset-0 bg-black/60 backdrop-blur-md" />
 
       <nav className="relative w-full h-full flex items-center justify-between px-15 text-white">
-        <div className="font-bold font-[Anton_SC] text-2xl">
+        <Link href="#">
+         <div className="font-bold font-[Anton_SC] text-2xl">
           {'<ATIF/>'}
         </div>
+        </Link>
         
         <div className="flex text-xl font-[layfair_Display] gap-2 md:gap-5 lg:gap-8">
-          <Link href="#work">work</Link>
+          <Link href="#work" className="hover:text-[#00FF00] hover:underline">work</Link>
           <span>/</span>
-          <Link href="#about">about</Link>
+          <Link href="#about" className="hover:text-[#00FF00] hover:underline">about</Link>
           <span>/</span>
-          <Link href="#connect">connect</Link>
+          <Link href="#connect" className="hover:text-[#00FF00] hover:underline">connect</Link>
         </div>
       </nav>
 

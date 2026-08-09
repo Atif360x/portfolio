@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from '@/components/Nav';
 import CustomCursor from '@/components/CustomCursor';
+import Time from '@/components/time'
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,6 +28,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="min-h-full flex flex-col">
         <CustomCursor />
+        <Time />
         <Navbar />
         {children}
         </body>

@@ -31,7 +31,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="h-[50vh] lg:h-[80vh] w-full bg-linear-180 from-[#000] from-[50%] to-[#000]/20">
+      <div id="about" className="h-[50vh] lg:h-[80vh] w-full bg-linear-180 from-[#000] from-[50%] to-[#000]/20">
        <div className="flex font-[Cinzel] flex-col lg:flex-row md:flex-row text-white justify-around items-center gap-5 p-5 px-18 md:p-8 mt-10 lg:p-10">
         <div className="flex justify-center mt-10 items-center flex-col lg:text-[19px] text-md text-center min-h-[40vh] lg:h-[50vh] w-full lg:w-[20vw] md:w-[30vw] bg-[#222]/5 border backdrop-blur-xs border-[#fff]/30 transition-all duration-700 hover:scale-102 hover:shadow-2xl hover:shadow-[#3A2FE9]/20 hover:bg-linear-180 hover:from-[#0A0A0A]/5 hover:from-[60%] hover:to-[#3A2FE9]/8 rounded-2xl p-6">
           <p>

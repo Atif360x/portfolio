@@ -19,6 +19,10 @@
   }
 }
 
+html,body{
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #000;
   background-image: radial-gradient(#00FF00 1.5px, transparent 1px);

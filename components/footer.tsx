@@ -28,8 +28,8 @@ export default function Footer () {
                 </div>
             </div>
             <div className=" flex justify-end items-center px-8 gap-5 h-[10%] font-[Helvetica] bg-[#0A0A0A]" >
-                    <Link className="px-4 py-1 text-white transition-all duration-700 hover:text-black rounded-md hover:rounded-[999] bg-transparent border border-white hover:bg-[#00FF00]" href="/work">work</Link>
-                    <Link className="px-4 py-1 text-white transition-all duration-700 hover:text-black rounded-md hover:rounded-[999] bg-transparent border border-white hover:bg-[#00FF00]" href="">about</Link>
+                    <Link className="px-4 py-1 text-white transition-all duration-700 hover:text-black rounded-md hover:rounded-[999] bg-transparent border border-white hover:bg-[#00FF00]" href="#work">work</Link>
+                    <Link className="px-4 py-1 text-white transition-all duration-700 hover:text-black rounded-md hover:rounded-[999] bg-transparent border border-white hover:bg-[#00FF00]" href="#about">about</Link>
                     <Link className="px-4 py-1 text-white transition-all duration-700 hover:text-black rounded-md hover:rounded-[999] bg-transparent border border-white hover:bg-[#00FF00]" href="#connect">connect</Link>
                     <Link className="px-6 py-1 text-white transition-all duration-700 hover:text-black rounded-md hover:rounded-[999] bg-transparent border border-white hover:bg-[#00FF00]" href="#top">back to top</Link>
             </div>
