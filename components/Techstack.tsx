@@ -63,7 +63,7 @@ export default function TechStack() {
     >
       <div
         ref={trackRef}
-        className="relative flex items-center gap-32 lg:gap-44 p-5 pl-[50vw] -translate-x-[calc(50%-3.5rem)] lg:-translate-x-[calc(50%-4.5rem)] shrink-0"
+        className="relative flex items-center gap-32 lg:gap-44 p-5 lg:pl-[50vw] md:pl-[50vw] -translate-x-[calc(50%-3.5rem)] lg:-translate-x-[calc(50%-4.5rem)] shrink-0"
       >
         {/* Continuous single white line running across all items */}
         <div className="absolute left-0 right-0 top-[110px] lg:top-[140px] h-[2px] bg-white opacity-80 z-0" />
