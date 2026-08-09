@@ -12,6 +12,10 @@
   --font-mono: var(--font-geist-mono);
 }
 
+@media (max-width: 768px) {
+  /* mobile-specific layout */
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
