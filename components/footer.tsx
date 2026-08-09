@@ -11,7 +11,7 @@ export default function Footer () {
     return (
         <footer className="h-70 flex flex-col w-[100vw] gap- bg-black overflow-hidden">
             <div className="bg-[#0A0A0A] flex flex-col justify-between md:flex-row lg:flex-row font-[Helvetica] p-8 text-white h-[50%]">
-                <p className='text-xl'>© 2026 • Built with precision & caffeine.</p>
+                <p className='text:sm md:text-xl'>© 2026 • Built with precision & caffeine.</p>
                 <div className='flex gap-5'>
                     <a href="https://github.com/Atif360x">
                         <img className="h-5 w-5 corsor-pointer" src="github.svg" />
@@ -27,7 +27,7 @@ export default function Footer () {
                     </a>           
                 </div>
             </div>
-            <div className=" flex justify-end items-center px-8 gap-5 h-[10%] font-[Helvetica] bg-[#0A0A0A]" >
+            <div className="hidden md:flex justify-end items-center px-8 gap-5 h-[10%] font-[Helvetica] bg-[#0A0A0A]" >
                     <Link className="px-4 py-1 text-white transition-all duration-700 hover:text-black rounded-md hover:rounded-[999] bg-transparent border border-white hover:bg-[#00FF00]" href="#work">work</Link>
                     <Link className="px-4 py-1 text-white transition-all duration-700 hover:text-black rounded-md hover:rounded-[999] bg-transparent border border-white hover:bg-[#00FF00]" href="#about">about</Link>
                     <Link className="px-4 py-1 text-white transition-all duration-700 hover:text-black rounded-md hover:rounded-[999] bg-transparent border border-white hover:bg-[#00FF00]" href="#connect">connect</Link>

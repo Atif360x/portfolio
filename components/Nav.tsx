@@ -19,7 +19,7 @@ export default function Navbar() {
         </div>
         </Link>
         
-        <div className="flex text-xl font-[layfair_Display] gap-2 md:gap-5 lg:gap-8">
+        <div className="hidden md:flex text-xl font-[layfair_Display] gap-2 md:gap-5 lg:gap-8">
           <Link href="#work" className="hover:text-[#00FF00] hover:underline">work</Link>
           <span>/</span>
           <Link href="#about" className="hover:text-[#00FF00] hover:underline">about</Link>
