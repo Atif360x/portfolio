@@ -16,7 +16,7 @@ export default function CustomCursor() {
     const isTouch = window.matchMedia('(hover: none), (pointer: coarse)').matches;
     if (isTouch) return;
 
-    
+  
     const dotX = gsap.quickTo(dot, 'x', { duration: 0.1, ease: 'power3.out' });
     const dotY = gsap.quickTo(dot, 'y', { duration: 0.1, ease: 'power3.out' });
 

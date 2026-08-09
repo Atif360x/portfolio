@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export default function ConnectSection() {
-  const email = 'mansuriatif@gmail.com';
+  const email = 'mansuriatif78@gmail.com';
   const whatsappNumber = '919146291001';
   const whatsappMessage = "Hey Atif, saw your portfolio and wanted to connect!";
 
