@@ -18,13 +18,6 @@ export default function TechStack() {
     { name: "CSS", src: "/css_old.svg" },
     { name: "React", src: "/react_dark.svg" },
     { name: "Next.js", src: "/nextjs_icon_dark.svg" },
-    { name: "Node.js", src: "/nodejs.svg" },
-    { name: "Express.js", src: "/expressjs_dark.svg" },
-    { name: "postman", src: "/postman.svg" },
-    { name: "MongoDB", src: "/mongodb-icon-dark.svg" },
-    { name: "MySQL", src: "/mysql-icon-dark.svg" },
-    { name: "PostgreSQL", src: "/postgresql.svg" },
-    { name: "Socket.io", src: "/socketio-icon-dark.svg" },
     { name: "Tailwind CSS", src: "/tailwindcss.svg" },
     { name: "Git", src: "/git.svg" },
     { name: "Figma", src: "/figma.svg" },
@@ -65,7 +58,7 @@ export default function TechStack() {
         ref={trackRef}
         className="relative flex items-center gap-32 lg:gap-44 p-5 lg:pl-[50vw] md:pl-[50vw] -translate-x-[calc(50%-3.5rem)] lg:-translate-x-[calc(50%-4.5rem)] shrink-0"
       >
-        {/* Continuous single white line running across all items */}
+        
         <div className="absolute left-0 right-0 top-[110px] lg:top-[140px] h-[2px] bg-white opacity-80 z-0" />
 
         {techStack.map((tech) => (
@@ -73,7 +66,7 @@ export default function TechStack() {
             key={tech.name}
             className="flex flex-col items-center shrink-0 gap-8 z-10"
           >
-            {/* Icon Box */}
+            
             <div className="tech-icon text-white p-6 lg:p-8 border rounded-full hover:border-[#00FF00]/20 hover:shadow-lg hover:shadow-[#3A2FE9]/40 cursor-pointer bg-black transition-all duration-300">
               <img
                 src={tech.src}
@@ -82,7 +75,7 @@ export default function TechStack() {
               />
             </div>
 
-            {/* Icon Name */}
+            
             <span className="text-white text-sm lg:text-base font-medium tracking-wide bg-black px-2 mt-2">
               {tech.name}
             </span>
