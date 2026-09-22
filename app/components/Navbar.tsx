@@ -26,12 +26,12 @@ export default function Nav() {
   }, []);
 
   return (
-    <main>
-        <nav className="fixed flex w-[100vw] justify-between px-8 py-5 font-[plexMono] bg-black/15 backdrop-blur-md font-bold">
-            <div className="text-lg">
+    <main className="z-10">
+        <nav className="fixed text-lg flex w-[100vw] justify-between px-8 py-5 font-[plexMono] bg-black/15 backdrop-blur-md font-bold">
+            <div className="text-xl mix-blend-difference">
                 {`<ATIF />`}
             </div>
-            <div className="hidden md:flex gap-3 corsur-pointer">
+            <div className="hidden md:flex gap-3 corsur-pointer mix-blend-difference">
                 <Link href="">ABOUT</Link>
                 <p>|</p>
                 <Link href="">WORK</Link>
@@ -41,11 +41,11 @@ export default function Nav() {
         </nav>
 
         <nav className="fixed inset-x-0 bottom-0 h-[8vh] bg-black flex items-center justify-between px-5">
-            <div className="border border-white h-[60%] flex justify-center items-center rounded-full">
+            <div className="hidden border border-white h-[60%] md:flex justify-center items-center rounded-full">
                 <p className="px-10 text-md">pune mh | IST {`${time}`}</p>
             </div>
 
-            <div className="border border-white h-[60%] flex justify-center items-center rounded-full">
+            <div className=" border border-white h-[60%] flex justify-center items-center rounded-full">
                 <Link className="px-10 text-md" href="">Hire me</Link>
             </div>
         </nav>
