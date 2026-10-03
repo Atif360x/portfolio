@@ -14,40 +14,24 @@ const plexMono = IBM_Plex_Mono({
 
 export default function Nav() {
 
-    const [time, setTime] = useState<string>("");
-
-  useEffect(() => {
-    const update = () => setTime(new Date().toLocaleString());
-
-    update(); // set immediately so there's no 1s blank
-    const id = setInterval(update, 1000);
-
-    return () => clearInterval(id); // cleanup on unmount
-  }, []);
-
   return (
-    <main className="z-10">
-        <nav className="fixed text-lg flex w-[100vw] justify-between px-8 py-5 font-[plexMono] bg-black/15 backdrop-blur-md font-bold">
-            <div className="text-xl mix-blend-difference">
-                {`<ATIF />`}
-            </div>
-            <div className="hidden md:flex gap-3 corsur-pointer mix-blend-difference">
-                <Link href="">ABOUT</Link>
-                <p>|</p>
-                <Link href="">WORK</Link>
-                <p>|</p>
-                <Link href="">COLLAB</Link>
-            </div>
-        </nav>
-
-        <nav className="fixed inset-x-0 bottom-0 h-[8vh] bg-black flex items-center justify-between px-5">
-            <div className="hidden border border-white h-[60%] md:flex justify-center items-center rounded-full">
-                <p className="px-10 text-md">pune mh | IST {`${time}`}</p>
+    <main className="fixed">
+        <nav className="w-[100vw] p-2 pt-5 md:px-8 flex justify-between text-lg">
+            <div className="bg-white text-blue-500 py-1 px-2 font-bold">
+                <p className="mix-blend-difference">{`<ATIF />`}</p>
             </div>
 
-            <div className=" border border-white h-[60%] flex justify-center items-center rounded-full">
-                <Link className="px-10 text-md" href="">Hire me</Link>
+            <div className="flex gap-4 items-center mix-blend-difference">
+                <Link className="text-white transition-colors duration-400 hover:text-blue-500" href="#">{`[ WORK ]`}</Link>
+                <Link className="text-white transition-colors duration-400 hover:text-blue-500" href="#">{`[ ABOUT ]`}</Link>
+                <Link className="text-white transition-colors duration-400 hover:text-blue-500" href="#">{`[ COLLAB ]`}</Link>
+            <div className="bg-white text-blue-500 py-1 px-2 cursor-pointer hover:underline mix-blend-difference">
+                <Link href="#">
+                    <p className="mix-blend-difference">{`<HIRE ME />`}</p>
+                </Link>
             </div>
+            </div>
+            
         </nav>
     </main>
   );
